@@ -5,7 +5,7 @@ import { fetchData } from './api'
 // import Chart from './components/chart/Chart';
 // import countryPicker from './components/countryPicker';
 import {Cards, CountryPicker, Chart } from './components'
-import image from '../src/components/images/image.png';
+import image from '../src/components/images/coronapre.png';
 
 
 class App extends React.Component {
@@ -32,10 +32,11 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
+        <p className={styles.picktext}> Select Country</p>
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data} />
         <Chart data={data} country={country} /> 
-        <h4 className={styles.footertxt}>Visit <a href="https://disturbinglgs.com.ng" className={styles.footertxt} target="_blank">DISTURBING LAGOS</a> for more updates.</h4>
+        <a href="mailto:ifeanyilucky360@gmail.com" target="_blank" className={styles.footertxt}> Developed by Ifeanyi Lucky</a>
       </div>
     );
   }

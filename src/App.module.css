@@ -10,10 +10,13 @@ body {
   }
   .footertxt {
     color: rgba(255, 0, 0, 0.5);
-    
-
+    font-size: 10px;
+    text-decoration: none;
   }
-  
+  .picktext {
+    padding-top: 20px;
+    font-weight: 500;
+  }
   .image {
     width: 370px;
     margin-top: 50px;
