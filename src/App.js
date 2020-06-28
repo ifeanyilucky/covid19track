@@ -36,7 +36,7 @@ class App extends React.Component {
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Cards data={data} />
         <Chart data={data} country={country} /> 
-        <a href="mailto:webcoderiq@gmail.com" target="_blank" className={styles.footertxt}> Developed by WebCoder IQ</a>
+        <a href="https://codack.netlify.app" target="_blank" className={styles.footertxt}> Developed by Ifeanyi Lucky</a>
       </div>
     );
   }
